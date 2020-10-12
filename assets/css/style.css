@@ -1,0 +1,362 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+html{
+	font-size:62.5%;
+	scroll-behavior: smooth;
+}
+body{
+	font-family: 'Titillium Web', sans-serif;
+	font-size:1.6rem;
+}
+/* =======Reusable class list========== */
+a{
+	cursor: pointer;
+	text-decoration:none;
+	color:inherit;
+}
+/* =========Reusable section======== */
+.section-title{
+	text-align: center;
+	padding:90px 50px;
+	color:#fff;
+}
+.section-title h2{
+	font-size:50px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.section-title h2::after{
+	content:'';
+	display:block;
+	width:70px;
+	height: 2px;
+	background:#666;
+	margin:10px auto;
+	
+}
+.clearfix::after{
+	content:"";
+	display:table;
+	clear:both;
+	visibility: hidden;
+}
+
+/* ==========header design ============= */
+header{
+	background:linear-gradient(#87509ca1,#87509ca1),  url("../img/home_bg.jpg")  center bottom no-repeat fixed;
+}
+.sticky{
+	background:#87509ce8;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:9999;
+	width:100%;
+}
+.sticky .nav-wrapper{
+	max-width:1140px;
+	padding:5px 100px;
+	margin:0 auto;
+}
+
+.nav-wrapper{
+	display:flex;
+	justify-content:space-between;
+	align-items: center;
+	padding:20px 100px;
+}
+ul{
+	display:flex;
+	align-items:center;
+}
+ul li{
+	list-style:none;
+	padding:0 5px;
+}
+ li a{
+	text-transform: uppercase;
+	padding:4px 6px;
+	font-weight: 400;
+	color:#fff;
+	font-size:16px;
+	border-radius:5px;
+}
+.top-nav li a:hover,.active{
+	background-color: #643a79;
+}
+.hero-section{
+	display:flex;
+	flex-direction:column;
+	/* justify-content: center; */
+	align-items: center;
+	padding:200px;
+}
+.hero-content{
+	text-align: center;
+}
+.hero-content h2{
+	font-weight: 700;
+	color:#fff;
+	font-size:40px;
+	padding-bottom: 40px;
+}
+.hero-content button {
+	padding:12px 16px;
+	background-color:#eb7d4b;
+	outline:none;
+	border:none;
+	color:#fff;
+	font-weight: 600;
+	font-size:18px;
+	text-transform: uppercase;
+}
+/* ========section part design======= */
+.service{
+	background:linear-gradient(#17c2a3e1,#17c2a3ef) , url("../img/service-bg.jpg") center center no-repeat;
+	text-align: center;
+	color:#fff;
+	padding-bottom:100px;
+}
+.service-box-content h2{
+	text-transform: uppercase;
+	padding:20px 0;
+	font-weight: 600;
+}
+/* portfolio section  */
+.team{
+	color:#666;
+	padding-bottom:50px;
+	background:linear-gradient(#e7f1f8ea,#e7f1f8e3),url("../img/portfolio-bg.jpg") center center no-repeat ;
+}
+.section-box h2,.section-box p{
+	color:#000;
+}
+.team-content{
+	text-align:center;
+}
+.team-content img{
+	border-radius: 50%;
+	height:20rem;
+	width:20rem;
+	opacity:0.6;
+}
+.team-content img:hover{
+	opacity:1;
+}
+.team-content .member-name{
+	text-transform: uppercase;
+	font-size:25px;
+	font-weight: 400;
+	padding:10px 0;
+
+}
+.job-title{
+	color:#30bae7;
+	font-size:18px;
+	text-transform: uppercase;
+	font-weight: 300;
+
+}
+.job-description{
+	font-size:14px;
+	padding:10px;
+}
+.team-nav{
+	justify-content: center;
+}
+.team-nav i {
+    font-size: 18px;
+    background-color: #bdd1df;
+    border-radius: 50%;
+    padding: 8px;
+    margin: 8px;
+}
+/* ===================skill design started ================ */
+.skill{
+	background:linear-gradient(#ffffffdc, #ffffffdc), url("../img/skill-bg.jpg") center bottom no-repeat fixed;
+	padding-bottom:50px;
+}
+.progress-wrapper{
+	text-align: center;
+}
+.progress-wrapper h3{
+	text-transform: uppercase;
+}
+
+svg.web-design circle { stroke:#30BAE7; }
+svg.html-css circle { stroke:#D74580; }
+svg.graphics-design circle { stroke:#15C7A8; }
+svg.ui-ux circle { stroke:#EA7743; }
+
+/*============== Portfolio design start==================== */
+.portfolio{
+	background:linear-gradient(#ffdd99ec,#f8cd77f1),url(../img/work-bg.jpg) center center fixed;
+	padding-bottom: 50px;
+	color:#393939;
+}
+.portfolio-image{
+	text-align:center;
+	color:#393939;
+}
+.portfolio-image .span_1_of_2:nth-child(3){
+	margin:0;
+}
+.portfolio-filter{
+	text-align:center;
+	padding-top:30px;
+}
+.portfolio-filter .btn{
+	text-transform: uppercase;
+	padding:4px 16px;
+	margin-left:15px;
+	/* letter-spacing: 2px; */
+	background-color: #DCBD7E;
+	border:none;
+	outline:0;
+}
+.portfolio-filter .btn:hover{
+	background:#FFFFFF;
+	cursor: pointer;
+	outline:0;
+	box-shadow:inset 0 4px 3px 0 rgba(0,0,0,0.3);
+}
+.portfolio-image-title{
+	font-size:18px;
+	text-transform: uppercase;
+	font-weight: 400;
+	padding-top:20px;
+	color:#393939;
+}
+.load-btn{
+	text-align:center;
+	padding:40px 0 50px 0;
+}
+.load-more-btn{
+	color:#fff;
+	background-color: #17c2a4;
+	text-transform: uppercase;
+	font-size:18px;
+	font-weight: 600;
+	padding:12px 16px;
+}
+.load-more-btn:hover{
+	box-shadow:0 5px 8px rgba(0,0,0,0.3);
+}
+/* Portfolio design end*/
+/* Testimonial  design start========================*/
+.testimonials{
+	background:linear-gradient(#d74680ef,#d74680ef), url(../img/skill-bg.jpg) center center fixed;
+}
+.testimonials  .section-title h2,.testimonials  .section-title p{
+	color:#fff;
+}
+.testimonials  .section-title h2::after{
+	background:#b73c6d;
+}
+.review-box{
+	display:flex;
+	padding-bottom: 50px;
+	margin-left:0;
+}
+.review-box img{
+	width:80px;
+	height:80px;
+	border-radius:50px;
+	margin-right:30px;
+}
+p.review-description{
+	font-size:18px;
+	font-style: italic;
+	color:#faecf1;
+	padding-bottom:20px;
+}
+h2.customer-namee{
+	text-transform: uppercase;
+	color:#fff;
+	font-weight: 600;
+}
+.customer-title{
+	color:#fcd597;
+	font-size:18px;
+	font-weight: 400;
+}
+
+
+/* Testimonial  design end*/
+/* ==========Contact  design Start====================*/
+.contact{
+	background:#3c5499;
+	padding-bottom:50px;
+}
+.contact .section-title h2,.contact .section-title p{
+	color:#fff;
+}
+.contact .section-title h2::after{
+	background:#273a71;
+}
+.contact-form form input,.contact-form form textarea{
+	padding:20px 10px;
+	background:#273a71;
+	text-transform: capitalize;
+	border:none;
+	outline:0;
+	margin:15px 0;
+	color:#fff;
+}
+.name-email{
+	display:flex;
+	justify-content:space-between;
+}
+.contact-form input::placeholder,.contact-form textarea::placeholder{
+	color:#fff;
+	opacity:1;
+}
+.contact-form{
+	text-align:center;
+	width:70%;
+}
+.name-email input{
+	width:49%;
+}
+.contact-form textarea{
+	width:100%;
+	resize:none;
+}
+.contact-submit-btn{
+	padding:10px 40px;
+	margin-top:40px;
+	font-weight: 600;
+	background:#30bae7;
+	text-transform: uppercase;
+	display:inline-block;
+	color:#fff;
+}
+
+
+/* ==========Contact  design end=================*/
+
+/* footer design started */
+footer{
+	background-color: #344b8e;
+}
+.navbar-footer{
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	padding:20px 100px;
+	max-width:1140px;
+	margin:0 auto;
+}
+.footer .navbar a{
+	color:#fff;
+	font-weight: 400;
+	font-size:18px;
+	padding:10px 10px;
+}
+.footer .navbar a:hover{
+	color:#30bae7;
+}

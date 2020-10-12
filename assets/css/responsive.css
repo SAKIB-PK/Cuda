@@ -1,0 +1,108 @@
+@media only screen and (max-width:1080px){
+    .review-box:nth-child(3){
+        width:45%;
+    }
+}
+
+@media only screen and (max-width:990px){
+    /* .sticky .nav-wrapper{
+        width:960px;
+    } */
+    .hero-section{
+        padding:200px 50px;
+    }
+    .nav-wrapper ul{
+        display:none;
+    }
+    .span_1_of_4{
+        width:49.2%;
+    }
+    .span_1_of_4:nth-child(3){
+        margin-left:0;
+    }
+    .portfolio-image .mix{
+        padding-bottom:30px;
+    }
+    .review-box{
+        display:flex;
+        flex-direction:column;
+        justify-content :center;
+        align-items:center;
+    }
+    .review-box img{
+        margin-bottom:20px;
+    }
+    .customer-intro{
+        text-align:center;
+    }
+    .contact-form{
+        width:90%;
+    }
+    p.review-description{
+        text-align:center;
+        width:90%;
+        margin:0 auto;
+    }
+
+}
+
+@media only screen and (max-width:800px){
+    /* .sticky .nav-wrapper{
+        width:760px;
+    } */
+    .section-title h2{
+        font-size:30px;
+    }
+    .section-title p{
+        font-size:14px;
+    }
+    /* .span_1_of_4{
+        width:49.2%;
+    }
+    .span_1_of_4:nth-child(3){
+        margin-left:0;
+    } */
+    /* p.review-description{
+        text-align:center;
+        width:90%;
+        margin:0 auto;
+    } */
+
+}
+@media only screen and (max-width:568px){
+    .hero-section{
+        padding:80px 30px;
+    }
+    .hero-content h2{
+        font-size:20px;
+    }
+    .hero-content button{
+        padding:8px 10px;
+        font-size:14px;
+    }
+    .service-box-content{
+        text-align:center;
+        max-width:90%;
+        margin:0 auto;
+    }
+    /* .sticky .nav-wrapper{
+        max-width:540px;
+    } */
+    .service-box{
+        padding-bottom:50px;
+    }
+    .span_1_of_4{
+        width:100%;
+    }
+    .span_1_of_4:nth-child(3){
+        margin-left:0;
+    }
+    .navbar-footer{
+        max-width:540px;
+        padding:10px 30px;
+    }
+    .footer .navbar a{
+        padding:5px;
+        font-size: 14px;
+    }
+}
